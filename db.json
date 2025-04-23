@@ -1,200 +1,551 @@
 {
   "categories": {
-    "Woman's Fashion": [],
-    "Man's Fashion": [],
-    "Electronics": [],
-    "Home & Lifestyle": [],
-    "Medicine": [],
-    "Sports & Outdoor": [],
-    "Baby’s & Toys": [],
+    "Woman's Fashion": [
+      {
+        "id": "wf001",
+        "title": "Summer Floral Dress",
+        "description": "Lightweight floral dress perfect for summer outings",
+        "image": "https://example.com/images/womens-dress.jpg",
+        "price": 49.99,
+        "discountPercentage": 15,
+        "rating": 4.5,
+        "brand": "Fashionista",
+        "category": "Dresses",
+        "availableQuantity": 20,
+        "colors": ["red", "blue", "yellow"],
+        "sizes": ["S", "M", "L", "XL"],
+        "thumbnail": "https://example.com/thumbnails/womens-dress.jpg",
+        "images": [
+          "https://example.com/images/womens-dress-1.jpg",
+          "https://example.com/images/womens-dress-2.jpg"
+        ],
+        "weight": "0.5kg",
+        "dimensions": "30x20x5cm",
+        "material": "Cotton",
+        "tags": ["summer", "floral", "casual"]
+      },
+      {
+        "id": "wf002",
+        "title": "High-Waist Jeans",
+        "description": "Comfortable high-waist jeans with stretch fabric",
+        "image": "https://example.com/images/womens-jeans.jpg",
+        "price": 59.99,
+        "discountPercentage": 10,
+        "rating": 4.2,
+        "brand": "DenimCo",
+        "category": "Pants",
+        "availableQuantity": 15,
+        "colors": ["blue", "black"],
+        "sizes": ["XS", "S", "M", "L"],
+        "thumbnail": "https://example.com/thumbnails/womens-jeans.jpg",
+        "images": [
+          "https://example.com/images/womens-jeans-1.jpg",
+          "https://example.com/images/womens-jeans-2.jpg"
+        ],
+        "weight": "0.7kg",
+        "dimensions": "35x25x3cm",
+        "material": "Denim",
+        "tags": ["casual", "everyday"]
+      }
+    ],
+    "Man's Fashion": [
+      {
+        "id": "mf001",
+        "title": "Classic Fit Shirt",
+        "description": "Formal shirt with classic fit for office wear",
+        "image": "https://example.com/images/mens-shirt.jpg",
+        "price": 39.99,
+        "discountPercentage": 5,
+        "rating": 4.3,
+        "brand": "FormalWear",
+        "category": "Shirts",
+        "availableQuantity": 25,
+        "colors": ["white", "blue", "gray"],
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": "https://example.com/thumbnails/mens-shirt.jpg",
+        "images": [
+          "https://example.com/images/mens-shirt-1.jpg",
+          "https://example.com/images/mens-shirt-2.jpg"
+        ],
+        "weight": "0.3kg",
+        "dimensions": "40x30x2cm",
+        "material": "Cotton",
+        "tags": ["formal", "office"]
+      },
+      {
+        "id": "mf002",
+        "title": "Slim Fit Chinos",
+        "description": "Comfortable slim fit chinos for casual wear",
+        "image": "https://example.com/images/mens-chinos.jpg",
+        "price": 45.99,
+        "discountPercentage": 0,
+        "rating": 4.0,
+        "brand": "CasualCo",
+        "category": "Pants",
+        "availableQuantity": 18,
+        "colors": ["khaki", "navy", "black"],
+        "sizes": ["30", "32", "34", "36"],
+        "thumbnail": "https://example.com/thumbnails/mens-chinos.jpg",
+        "images": [
+          "https://example.com/images/mens-chinos-1.jpg",
+          "https://example.com/images/mens-chinos-2.jpg"
+        ],
+        "weight": "0.6kg",
+        "dimensions": "38x28x3cm",
+        "material": "Cotton blend",
+        "tags": ["casual", "everyday"]
+      }
+    ],
+    "Electronics": [
+      {
+        "id": "e001",
+        "title": "Smartphone X Pro",
+        "description": "Latest flagship smartphone with advanced camera system",
+        "image": "https://example.com/images/smartphone.jpg",
+        "price": 999.99,
+        "discountPercentage": 8,
+        "rating": 4.8,
+        "brand": "TechBrand",
+        "category": "Phones",
+        "availableQuantity": 10,
+        "colors": ["black", "silver", "blue"],
+        "storage": ["128GB", "256GB", "512GB"],
+        "thumbnail": "https://example.com/thumbnails/smartphone.jpg",
+        "images": [
+          "https://example.com/images/smartphone-1.jpg",
+          "https://example.com/images/smartphone-2.jpg"
+        ],
+        "weight": "198g",
+        "dimensions": "146.7x71.5x7.7mm",
+        "specs": {
+          "display": "6.1-inch Super Retina XDR",
+          "processor": "A15 Bionic chip",
+          "battery": "Up to 22 hours video playback",
+          "camera": "Pro 12MP camera system"
+        },
+        "tags": ["smartphone", "flagship", "5G"]
+      },
+      {
+        "id": "e002",
+        "title": "Wireless Earbuds Pro",
+        "description": "Premium wireless earbuds with active noise cancellation",
+        "image": "https://example.com/images/earbuds.jpg",
+        "price": 249.99,
+        "discountPercentage": 12,
+        "rating": 4.6,
+        "brand": "SoundMaster",
+        "category": "Audio",
+        "availableQuantity": 30,
+        "colors": ["white", "black"],
+        "thumbnail": "https://example.com/thumbnails/earbuds.jpg",
+        "images": [
+          "https://example.com/images/earbuds-1.jpg",
+          "https://example.com/images/earbuds-2.jpg"
+        ],
+        "weight": "45g",
+        "dimensions": "Case: 60x45x25mm",
+        "specs": {
+          "battery": "Up to 6 hours (24 with case)",
+          "connectivity": "Bluetooth 5.0",
+          "features": "Active Noise Cancellation, Transparency mode"
+        },
+        "tags": ["wireless", "earbuds", "audio"]
+      }
+    ],
+    "Home & Lifestyle": [
+      {
+        "id": "hl001",
+        "title": "Ceramic Dinner Set",
+        "description": "Elegant 16-piece ceramic dinner set for formal dining",
+        "image": "https://example.com/images/dinner-set.jpg",
+        "price": 89.99,
+        "discountPercentage": 20,
+        "rating": 4.4,
+        "brand": "HomeStyle",
+        "category": "Dining",
+        "availableQuantity": 12,
+        "colors": ["white", "cream"],
+        "thumbnail": "https://example.com/thumbnails/dinner-set.jpg",
+        "images": [
+          "https://example.com/images/dinner-set-1.jpg",
+          "https://example.com/images/dinner-set-2.jpg"
+        ],
+        "weight": "3.5kg",
+        "dimensions": "Packaged: 40x30x25cm",
+        "material": "Ceramic",
+        "tags": ["dining", "kitchen", "formal"]
+      },
+      {
+        "id": "hl002",
+        "title": "Memory Foam Pillow",
+        "description": "Orthopedic memory foam pillow for better sleep",
+        "image": "https://example.com/images/pillow.jpg",
+        "price": 39.99,
+        "discountPercentage": 15,
+        "rating": 4.7,
+        "brand": "SleepWell",
+        "category": "Bedding",
+        "availableQuantity": 25,
+        "colors": ["white", "gray"],
+        "sizes": ["Standard", "Queen"],
+        "thumbnail": "https://example.com/thumbnails/pillow.jpg",
+        "images": [
+          "https://example.com/images/pillow-1.jpg",
+          "https://example.com/images/pillow-2.jpg"
+        ],
+        "weight": "1.2kg",
+        "dimensions": "50x30x10cm",
+        "material": "Memory foam",
+        "tags": ["sleep", "comfort", "health"]
+      }
+    ],
+    "Medicine": [
+      {
+        "id": "m001",
+        "title": "Multivitamin Tablets",
+        "description": "Daily multivitamin supplement for overall health",
+        "image": "https://example.com/images/multivitamin.jpg",
+        "price": 14.99,
+        "discountPercentage": 5,
+        "rating": 4.3,
+        "brand": "HealthPlus",
+        "category": "Supplements",
+        "availableQuantity": 50,
+        "count": "60 tablets",
+        "thumbnail": "https://example.com/thumbnails/multivitamin.jpg",
+        "images": [
+          "https://example.com/images/multivitamin-1.jpg",
+          "https://example.com/images/multivitamin-2.jpg"
+        ],
+        "weight": "100g",
+        "ingredients": "Vitamin A, C, D, E, B-complex, minerals",
+        "tags": ["health", "supplement", "vitamins"]
+      },
+      {
+        "id": "m002",
+        "title": "Pain Relief Cream",
+        "description": "Topical cream for muscle and joint pain relief",
+        "image": "https://example.com/images/pain-cream.jpg",
+        "price": 9.99,
+        "discountPercentage": 0,
+        "rating": 4.1,
+        "brand": "ReliefNow",
+        "category": "Topical",
+        "availableQuantity": 35,
+        "volume": "100ml",
+        "thumbnail": "https://example.com/thumbnails/pain-cream.jpg",
+        "images": [
+          "https://example.com/images/pain-cream-1.jpg",
+          "https://example.com/images/pain-cream-2.jpg"
+        ],
+        "weight": "120g",
+        "activeIngredients": "Menthol 10%, Camphor 4%",
+        "tags": ["pain", "relief", "muscle"]
+      }
+    ],
+    "Sports & Outdoor": [
+      {
+        "id": "so001",
+        "title": "Running Shoes",
+        "description": "Lightweight running shoes with cushioning technology",
+        "image": "https://example.com/images/running-shoes.jpg",
+        "price": 89.99,
+        "discountPercentage": 25,
+        "rating": 4.6,
+        "brand": "RunFast",
+        "category": "Footwear",
+        "availableQuantity": 15,
+        "colors": ["black/red", "blue/white", "gray"],
+        "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+        "thumbnail": "https://example.com/thumbnails/running-shoes.jpg",
+        "images": [
+          "https://example.com/images/running-shoes-1.jpg",
+          "https://example.com/images/running-shoes-2.jpg"
+        ],
+        "weight": "280g (per shoe)",
+        "features": ["Breathable mesh", "Shock absorption", "Flexible sole"],
+        "tags": ["running", "fitness", "shoes"]
+      },
+      {
+        "id": "so002",
+        "title": "Camping Tent 4-Person",
+        "description": "Waterproof 4-person tent for outdoor adventures",
+        "image": "https://example.com/images/tent.jpg",
+        "price": 149.99,
+        "discountPercentage": 10,
+        "rating": 4.5,
+        "brand": "OutdoorGear",
+        "category": "Camping",
+        "availableQuantity": 8,
+        "colors": ["green", "blue"],
+        "thumbnail": "https://example.com/thumbnails/tent.jpg",
+        "images": [
+          "https://example.com/images/tent-1.jpg",
+          "https://example.com/images/tent-2.jpg"
+        ],
+        "weight": "3.2kg",
+        "dimensions": "Packed: 50x15x15cm, Set up: 240x210x130cm",
+        "features": ["Waterproof", "Ventilation", "Easy setup"],
+        "tags": ["camping", "outdoor", "tent"]
+      }
+    ],
+    "Baby's & Toys": [
+      {
+        "id": "bt001",
+        "title": "Educational Building Blocks",
+        "description": "Colorful building blocks for creative play and learning",
+        "image": "https://example.com/images/blocks.jpg",
+        "price": 24.99,
+        "discountPercentage": 15,
+        "rating": 4.7,
+        "brand": "LearnFun",
+        "category": "Toys",
+        "availableQuantity": 20,
+        "ageRange": "1-5 years",
+        "thumbnail": "https://example.com/thumbnails/blocks.jpg",
+        "images": [
+          "https://example.com/images/blocks-1.jpg",
+          "https://example.com/images/blocks-2.jpg"
+        ],
+        "weight": "1.5kg",
+        "dimensions": "Box: 30x20x10cm",
+        "material": "Plastic",
+        "tags": ["educational", "toys", "blocks"]
+      },
+      {
+        "id": "bt002",
+        "title": "Baby Stroller",
+        "description": "Lightweight stroller with adjustable seat and canopy",
+        "image": "https://example.com/images/stroller.jpg",
+        "price": 129.99,
+        "discountPercentage": 5,
+        "rating": 4.4,
+        "brand": "BabyComfort",
+        "category": "Gear",
+        "availableQuantity": 10,
+        "colors": ["black", "blue", "pink"],
+        "thumbnail": "https://example.com/thumbnails/stroller.jpg",
+        "images": [
+          "https://example.com/images/stroller-1.jpg",
+          "https://example.com/images/stroller-2.jpg"
+        ],
+        "weight": "8.5kg",
+        "dimensions": "Folded: 90x45x35cm",
+        "features": ["One-hand fold", "Adjustable handle", "Storage basket"],
+        "tags": ["stroller", "baby", "travel"]
+      }
+    ],
     "Groceries & Pets": [
       {
+        "id": "gp001",
         "title": "Apple",
         "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
         "image": "https://cdn.dummyjson.com/products/images/groceries/Apple/1.png",
-        "availableQuantity":5
-        
+        "price": 0.99,
+        "discountPercentage": 0,
+        "rating": 4.5,
+        "brand": "Nature's Best",
+        "category": "Fruits",
+        "availableQuantity": 50,
+        "unit": "each",
+        "weight": "150g avg.",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Apple/thumbnail.png",
+        "images": [
+          "https://cdn.dummyjson.com/products/images/groceries/Apple/1.png",
+          "https://cdn.dummyjson.com/products/images/groceries/Apple/2.png"
+        ],
+        "origin": "Local farm",
+        "nutrition": {
+          "calories": 52,
+          "carbs": "14g",
+          "fiber": "2.4g",
+          "vitamins": ["C", "K"]
+        },
+        "tags": ["fruit", "healthy", "snack"]
       },
       {
-        "title": "Kiwi",
-        "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Kiwi/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Cucumber",
-        "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Cucumber/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Green Bell Pepper",
-        "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Green Chili Pepper",
-        "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Beef Steak",
-        "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Chicken Meat",
-        "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Fish Steak",
-        "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Eggs",
-        "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Eggs/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Cat Food",
-        "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Cat%20Food/1.png",
-        "availableQuantity":5
-      },
-      {
+        "id": "gp002",
         "title": "Dog Food",
         "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
         "image": "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Honey Jar",
-        "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Ice Cream",
-        "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Juice",
-        "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Juice/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Cooking Oil",
-        "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
-        "image": "https://cdn.dummyjson.com/products/images/groceries/Cooking%20Oil/1.png",
-        "availableQuantity":5
+        "price": 24.99,
+        "discountPercentage": 10,
+        "rating": 4.3,
+        "brand": "PetHealth",
+        "category": "Pet Food",
+        "availableQuantity": 30,
+        "weight": "5kg",
+        "flavor": "Chicken & Rice",
+        "lifeStage": "Adult",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/thumbnail.png",
+        "images": [
+          "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/1.png",
+          "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/2.png"
+        ],
+        "ingredients": ["Chicken", "Brown rice", "Vegetables", "Vitamins"],
+        "tags": ["pet", "dog", "food"]
       }
     ],
     "Beauty": [
       {
+        "id": "b001",
         "title": "Essence Mascara Lash Princess",
         "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
         "image": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Eyeshadow Palette with Mirror",
-        "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
-        "image": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Powder Canister",
-        "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
-        "image": "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Red Lipstick",
-        "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
-        "image": "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Red Nail Polish",
-        "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
-        "image": "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/1.png",
-        "availableQuantity":5
+        "price": 8.99,
+        "discountPercentage": 15,
+        "rating": 4.6,
+        "brand": "Essence",
+        "category": "Makeup",
+        "availableQuantity": 25,
+        "volume": "10ml",
+        "color": "Black",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png",
+        "images": [
+          "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png",
+          "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/2.png"
+        ],
+        "features": ["Cruelty-free", "Vegan", "Water-resistant"],
+        "tags": ["mascara", "makeup", "eyes"]
       }
     ],
     "Fragrances": [
       {
+        "id": "f001",
         "title": "Calvin Klein CK One",
         "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
         "image": "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Chanel Coco Noir",
-        "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
-        "image": "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Dior J'adore",
-        "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
-        "image": "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Dolce Shine",
-        "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
-        "image": "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Gucci Bloom",
-        "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
-        "image": "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/1.png",
-        "availableQuantity":5
+        "price": 59.99,
+        "discountPercentage": 5,
+        "rating": 4.4,
+        "brand": "Calvin Klein",
+        "category": "Eau de Toilette",
+        "availableQuantity": 15,
+        "volume": "100ml",
+        "fragranceFamily": "Fresh",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/thumbnail.png",
+        "images": [
+          "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/1.png",
+          "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/2.png"
+        ],
+        "notes": ["Bergamot", "Green tea", "Jasmine", "Musk"],
+        "tags": ["perfume", "unisex", "fresh"]
       }
     ],
     "Furniture": [
       {
-        "title": "Annibale Colombo Bed",
-        "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
-        "image": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/1.png",
-        "availableQuantity":5
-      },
-      {
+        "id": "fu001",
         "title": "Annibale Colombo Sofa",
         "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
         "image": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Bedside Table African Cherry",
-        "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
-        "image": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Knoll Saarinen Executive Conference Chair",
-        "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
-        "image": "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/1.png",
-        "availableQuantity":5
-      },
-      {
-        "title": "Wooden Bathroom Sink With Mirror",
-        "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
-        "image": "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/1.png",
-        "availableQuantity":5
+        "price": 1299.99,
+        "discountPercentage": 10,
+        "rating": 4.7,
+        "brand": "Annibale Colombo",
+        "category": "Sofas",
+        "availableQuantity": 5,
+        "colors": ["brown", "gray", "blue"],
+        "dimensions": "220x90x85cm",
+        "material": "Leather",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png",
+        "images": [
+          "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
+          "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/2.png"
+        ],
+        "weight": "85kg",
+        "assembly": "Required",
+        "tags": ["sofa", "living room", "premium"]
       }
     ]
+  },
+  "users": [
+    {
+      "id": "u001",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "password": "hashed_password",
+      "addresses": [
+        {
+          "street": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zip": "10001",
+          "country": "USA",
+          "isDefault": true
+        }
+      ],
+      "phone": "+1234567890",
+      "role": "customer",
+      "createdAt": "2023-01-15T10:30:00Z",
+      "wishlist": ["wf001", "e001"]
+    }
+  ],
+  "orders": [
+    {
+      "id": "o001",
+      "userId": "u001",
+      "products": [
+        {
+          "productId": "gp001",
+          "quantity": 5,
+          "price": 0.99
+        },
+        {
+          "productId": "b001",
+          "quantity": 1,
+          "price": 8.99
+        }
+      ],
+      "total": 13.94,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "country": "USA"
+      },
+      "paymentMethod": "credit_card",
+      "status": "delivered",
+      "createdAt": "2023-05-10T14:25:00Z",
+      "deliveredAt": "2023-05-15T10:00:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r001",
+      "productId": "gp001",
+      "userId": "u001",
+      "rating": 5,
+      "comment": "Fresh and delicious apples!",
+      "createdAt": "2023-05-16T09:15:00Z"
+    }
+  ],
+  "coupons": [
+    {
+      "code": "SUMMER20",
+      "discount": 20,
+      "validFrom": "2023-06-01",
+      "validTo": "2023-08-31",
+      "minPurchase": 50,
+      "maxDiscount": 20,
+      "isActive": true
+    }
+  ],
+  "settings": {
+    "shippingOptions": [
+      {
+        "name": "Standard",
+        "price": 5.99,
+        "deliveryTime": "3-5 business days"
+      },
+      {
+        "name": "Express",
+        "price": 12.99,
+        "deliveryTime": "1-2 business days"
+      }
+    ],
+    "paymentMethods": ["credit_card", "paypal", "bank_transfer"],
+    "taxRate": 8.5
   }
 }
