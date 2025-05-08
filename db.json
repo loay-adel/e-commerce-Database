@@ -531,27 +531,6 @@
   },
   "users": [
     {
-      "id": "u001",
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "john.doe@example.com",
-      "password": "hashed_password",
-      "addresses": [
-        {
-          "street": "123 Main St",
-          "city": "New York",
-          "state": "NY",
-          "zip": "10001",
-          "country": "USA",
-          "isDefault": true
-        }
-      ],
-      "phone": "+1234567890",
-      "role": "customer",
-      "createdAt": "2023-01-15T10:30:00Z",
-      "wishlist": ["wf001", "e001"]
-    },
-    {
       "id": "u002",
       "firstName": "loay",
       "lastName": "adel",
@@ -570,7 +549,108 @@
       "phone": "+1234567890",
       "role": "admin",
       "createdAt": "2022-01-15T10:30:00Z",
-      "wishlist": ["wf001", "e001"]
+      "wishlist": ["wf001", "e001"],
+      "reviews": [
+        {
+          "productId": "gp001",
+          "rating": 5,
+          "comment": "These apples are always fresh and delicious!",
+          "date": "2023-05-15T10:30:00Z"
+        },
+        {
+          "productId": "gp002",
+          "rating": 5,
+          "comment": "My dog loves this food! His coat looks shinier too.",
+          "date": "2023-04-10T09:15:00Z"
+        },
+        {
+          "productId": "f001",
+          "rating": 5,
+          "comment": "My signature scent for years! Light and fresh.",
+          "date": "2023-01-15T10:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "u1746000385981",
+      "firstName": "malak",
+      "lastName": "adel",
+      "email": "m@l;.com",
+      "password": "$2b$10$ScJPaeqXSxId/QZA2WO2S.sTXhzT9sVqQPU2CjkXH6fWphnvyN9Y2",
+      "addresses": [
+        {
+          "street": "",
+          "city": "",
+          "state": "",
+          "zip": "",
+          "country": "",
+          "isDefault": true
+        }
+      ],
+      "phone": "",
+      "role": "customer",
+      "createdAt": "2025-04-30T08:06:25.981Z",
+      "wishlist": ["gp005"],
+      "reviews": [
+        {
+          "productId": "gp001",
+          "rating": 4,
+          "comment": "Good quality but a bit small",
+          "date": "2023-05-20T14:45:00Z"
+        },
+        {
+          "productId": "b001",
+          "rating": 5,
+          "comment": "Best mascara I've ever used! Doesn't clump at all.",
+          "date": "2023-03-22T11:30:00Z"
+        },
+        {
+          "productId": "f001",
+          "rating": 4,
+          "comment": "Love the scent but doesn't last very long",
+          "date": "2023-02-28T15:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": "u1746446808528",
+      "firstName": "aser",
+      "lastName": "salim",
+      "email": "as@m.com",
+      "password": "$2b$10$hPAXWHomVK4mZqxEgNOUP.fH7rj3n1vfrPlhimw6uTqRXAMZ9En.m",
+      "addresses": [
+        {
+          "street": "",
+          "city": "",
+          "state": "",
+          "zip": "",
+          "country": "",
+          "isDefault": true
+        }
+      ],
+      "phone": "",
+      "role": "customer",
+      "createdAt": "2025-05-05T12:06:48.526Z",
+      "wishlist": ["gp005"],
+      "cart": [
+        {
+          "id": "gp005",
+          "title": "Green Bell Pepper",
+          "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
+          "image": "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/1.png",
+          "price": 1.29,
+          "discountPercentage": 15.5,
+          "rating": 4.28,
+          "availableQuantity": 5,
+          "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/thumbnail.png",
+          "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/1.png"
+          ],
+          "tags": ["vegetable", "fresh"],
+          "quantity": 3,
+          "subtotal": 3.87
+        }
+      ]
     }
   ],
   "orders": [
@@ -621,7 +701,8 @@
       "validTo": "2023-08-31",
       "minPurchase": 50,
       "maxDiscount": 20,
-      "isActive": true
+      "isActive": true,
+      "id": "ebb8"
     }
   ],
   "settings": {
